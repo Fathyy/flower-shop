@@ -3,9 +3,10 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cors from "cors";
 import authRoutes from './routes/auth.routes.js';
-import User from './models/user.model.js';
-import Flower from './models/flower.model.js';
-import { flowers, users } from './data/index.js';
+import flowerRoutes from './routes/flowers.routes.js';
+// import User from './models/user.model.js';
+// import Flower from './models/flower.model.js';
+// import { flowers, users } from './data/index.js';
 
 dotenv.config();
 
@@ -38,6 +39,7 @@ app.listen(5000, () => {
 })
 
 app.use('/api/auth', authRoutes)
+app.use('/api/flowers', flowerRoutes)
 
 // middleware
 app.use((err, req, res, next) => {

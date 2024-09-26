@@ -7,6 +7,7 @@ const BASE_URL = "http://localhost:5000/api/auth/";
 interface GlobalContextType {
     login: (signinData: SigninDataProps) => Promise<void>;
     signup: (signupData: SignupDataProps) => Promise<void>;
+    getFlowers: () => Promise<void>;
 }
 
 interface SigninDataProps {
@@ -50,8 +51,22 @@ export const GlobalProvider = ({ children }: { children: ReactNode }) => {
         }
     }
 
+    // get flowers function
+     const getFlowers = async () => {
+        try {
+            const res = await axios.get(`${BASE_URL}flowers`, {
+                headers: {
+                    'Content-Type': 'application/json'
+                  }
+            });
+            console.log(res.data);
+        } catch (err) {
+            console.log(err)     
+        }
+     }
+
     return (
-        <GlobalContext.Provider value={{ login, signup }}>
+        <GlobalContext.Provider value={{ login, signup, getFlowers }}>
             {children}
         </GlobalContext.Provider>
     );
