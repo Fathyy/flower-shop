@@ -3,6 +3,9 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cors from "cors";
 import authRoutes from './routes/auth.routes.js';
+import User from './models/user.model.js';
+import Flower from './models/flower.model.js';
+import { flowers, users } from './data/index.js';
 
 dotenv.config();
 
@@ -45,4 +48,10 @@ app.use((err, req, res, next) => {
         statusCode,
         message
     })
-})
+});
+
+
+ /* ADD DATA ONE TIME */
+    // User.insertMany(users);
+    // Flower.insertMany(flowers)
+
