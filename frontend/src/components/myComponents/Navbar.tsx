@@ -3,7 +3,7 @@ import {
     NavigationMenuItem,
     NavigationMenuLink,
   } from "@/components/ui/navigation-menu";
-  import { Button } from "@/components/ui/button";
+  // import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 function MyNavbar() {
@@ -27,8 +27,8 @@ function MyNavbar() {
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenu>
-      <Link to="/signup" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Sign Up
+      <Link to="/login" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Login
       </Link>
     </nav>
   );

@@ -1,6 +1,6 @@
 // get the flower data
 
-import Flower from "../models/flower.model";
+import Flower from "../models/flower.model.js";
 
 export const getFlowers = async (req, res) => {
     try {

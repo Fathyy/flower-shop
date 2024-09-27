@@ -137,7 +137,7 @@ export const flowers = [
     name: "Rose",
     scientificName: "Rosa",
     description: "A beautiful red flower known for its fragrance.",
-    picturePath: "rose.jpeg",
+    picturePath: "rose.jpg",
     userPicturePath: "rose.jpg",
   },
   {
@@ -147,7 +147,7 @@ export const flowers = [
     scientificName: "Tulipa",
     description:
       "A vibrant flower that comes in many colors. Perfect for spring.",
-    picturePath: "tulip.jpeg",
+    picturePath: "tulip.jpg",
     userPicturePath: "tulip.jpg",
   },
   {
@@ -157,7 +157,7 @@ export const flowers = [
     scientificName: "Helianthus",
     description:
       "A tall flower known for its large, bright yellow petals and seeds.",
-    picturePath: "sunflower.jpeg",
+    picturePath: "sunflower.jpg",
     userPicturePath: "sunflower.jpg",
   },
   {
@@ -167,7 +167,7 @@ export const flowers = [
     scientificName: "Bellis perennis",
     description:
       "A simple yet charming flower with white petals and a yellow center.",
-    picturePath: "daisy.jpeg",
+    picturePath: "daisy.jpg",
     userPicturePath: "daisy.jpg",
   },
   {
